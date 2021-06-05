@@ -1,6 +1,9 @@
 \version "2.20.0"
 
+#(ly:set-option 'relative-includes #t)
 \include "guitar-string-bending/module.ily"
+#(ly:set-option 'relative-includes #f)
+
 
 #(define (naturalize-pitch p)
    (let ((o (ly:pitch-octave p))
